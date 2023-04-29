@@ -1,0 +1,243 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px;
+}
+
+.navbar-logo a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar-logout a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.navbar-logout a:hover {
+  background-color: #000000;
+  color: #ffffff !important;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #335ddc;
+  border-radius: 8px;
+}
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #d9edff;
+}
+.login-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 1000px;
+  background-color: white;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+#login-form {
+  flex: 1 0 100%;
+  max-width: 480px;
+  width: 100%;
+  padding: 60px;
+}
+#login-form p {
+  margin-bottom: 30px;
+}
+#login-form p.form-title {
+  color: #333333;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0;
+}
+#login-form .ant-form-item-label > label.ant-form-item-required::before {
+  display: none;
+}
+.ant-form-item-control-input-content {
+  text-align: left;
+}
+#login-form .ant-input-affix-wrapper {
+  padding: 12px 15px;
+}
+#login-form_username {
+  height: 48px;
+}
+#login-form .ant-btn {
+  height: 42px;
+  letter-spacing: 1px;
+  border-radius: 6px;
+}
+.login-form-button {
+  width: 100%;
+}
+.illustration-wrapper {
+  display: flex;
+  align-items: flex-end;
+  max-width: 800px;
+  min-height: 100%;
+  background-color: #fffdf2;
+}
+.illustration-wrapper img {
+  display: block;
+  width: 100%;
+}
+
+.table-container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table td:nth-child(2) {
+  font-weight: bold;
+}
+
+.table td:nth-child(3) {
+  font-weight: bold;
+  color: #333;
+}
+
+@media screen and (max-width: 1023px) {
+  .login-box {
+    flex-direction: column;
+    box-shadow: none;
+  }
+  .illustration-wrapper {
+    max-width: 100%;
+    min-height: auto;
+  }
+  #login-form {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
