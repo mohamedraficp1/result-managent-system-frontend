@@ -12,7 +12,7 @@ const Login = () => {
   const handleResponse = useCallback(
     (data) => {
       setCurrentUser(data);
-      navigate("/dashboard");
+      navigate("/");
     },
     [navigate]
   );

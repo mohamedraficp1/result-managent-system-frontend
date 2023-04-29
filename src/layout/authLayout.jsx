@@ -10,7 +10,7 @@ const ProtectedLayout = () => {
 
 const AuthLayout = () => {
   const currentUser = getCurrentUser();
-  return currentUser ? <Navigate to="/dashboard" /> : <Outlet />;
+  return currentUser ? <Navigate to="/" /> : <Outlet />;
 };
 
 export { ProtectedLayout, AuthLayout };
